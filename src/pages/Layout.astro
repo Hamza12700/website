@@ -1,0 +1,28 @@
+---
+import Navbar from "../components/Navbar.astro";
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="title" content="Hamza" />
+		<meta name="description" content="Hamza's personal website" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Hamza" />
+		<title>hamza</title>
+	</head>
+
+	<body class="bg-[#090909] mt-7 text-[#ada9a9] lg:px-96">
+		<Navbar />
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	p {
+		@apply text-xl;
+	}
+</style>

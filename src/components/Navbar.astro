@@ -1,0 +1,26 @@
+---
+import Link from "./Link.astro";
+---
+
+<nav class="flex justify-between rounded-xl bg-[#13131399] px-3 py-4">
+	<a class="text-xl font-semibold text-white" href="/"
+		>hamza<span class="text-blue-300">.</span></a
+	>
+	<ul class="flex items-center gap-8 text-lg text-white">
+		<li><Link class="hover:text-blue-300" href="/me">/me</Link></li>
+		<li>
+			<Link class="hover:text-blue-300" href="/stuff">/stuff</Link>
+		</li>
+		<li>
+			<a href="https://github.com/Hamza12700/"
+				><img class="w-6" src="/github.webp" alt="github" /></a
+			>
+		</li>
+	</ul>
+</nav>
+
+<style>
+	.active {
+		@apply rounded-md bg-[#2e2e2e] px-2 py-1;
+	}
+</style>

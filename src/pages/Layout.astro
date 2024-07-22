@@ -1,5 +1,11 @@
 ---
+interface Props {
+	title: string;
+	description: string;
+}
+
 import Navbar from "../components/Navbar.astro";
+const {title, description} = Astro.props;
 ---
 
 <!doctype html>
@@ -9,10 +15,11 @@ import Navbar from "../components/Navbar.astro";
 		<link rel="icon" href="https://avatars.githubusercontent.com/u/72913359?v=4" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta name="title" content="Hamza" />
-		<meta name="description" content="Hamza's personal website" />
+		<meta name="description" content={description}/>
 		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Hamza" />
-		<title>hamza</title>
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<title>{title}</title>
 	</head>
 
 	<body class="bg-[#090909] mt-7 text-[#ada9a9] lg:w-[50rem] mx-auto px-4 lg:px-0">

@@ -1,0 +1,23 @@
+---
+interface Props {
+	tags: string[];
+	title: string;
+	desc: string;
+	link: string;
+}
+
+const { tags, title, desc, link } = Astro.props;
+---
+
+<a href={link} class="bg-ldark w-80 rounded-md p-4">
+	<h3 class="text-white font-mono">{title}</h3>
+	<p class="text-base">{desc}</p>
+	<div class="flex mt-1 gap-1">
+		{
+			tags.map((tag, idx) => (
+				<span class="font-mono text-dblue">{tag}</span>
+				<span>{idx < tags.length - 1 ? "⋅" : ""}</span>
+			))
+		}
+	</div>
+</a>

@@ -2,7 +2,7 @@
 import Link from "./Link.astro";
 ---
 
-<nav class="flex justify-between rounded-xl bg-ldark px-3 py-4">
+<nav class="flex sticky top-7 justify-between rounded-xl bar px-3 py-4">
 	<a class="text-xl font-semibold text-white" href="/"
 		>hamza<span class="text-blue-300">.</span></a
 	>
@@ -22,5 +22,9 @@ import Link from "./Link.astro";
 <style>
 	.active {
 		@apply rounded-md bg-[#2e2e2e] px-2 py-1;
+	}
+	.bar {
+		backdrop-filter: blur(10px);
+		background-color: rgba(19, 19, 19, 0.6);
 	}
 </style>

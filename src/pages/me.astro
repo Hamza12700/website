@@ -1,0 +1,87 @@
+---
+import Layout from "./Layout.astro";
+import SkillCard from "../components/SkillCard.astro";
+---
+
+<Layout title="about me" description="hamza's persnoal website | about me">
+	<header class="mt-10">
+		<div class="flex items-end gap-3">
+			<img
+				class="w-14 rounded-full border border-white"
+				src="https://avatars.githubusercontent.com/u/72913359?v=4"
+				alt="profile pic"
+			/>
+			<h1 class="font-zain text-3xl text-white">Hamza|Rashid</h1>
+		</div>
+	</header>
+	<p class="mt-5">
+		I am a self-taugh passionate <span class="text-white">backend</span> who also
+		makes <span class="text-white">full-stack</span> websites. Currently, I am learning
+		about the world of <span class="text-white">low-level programming</span>. I
+		like building <span class="text-white">full-stack</span> websites <span
+			class="text-white italic">(mostly focusing on backend stuff)</span
+		>.
+	</p>
+	<div class="w-40 my-8 h-[.1rem] bg-white opacity-20"></div>
+	<h2 class="text-2xl text-dblue">
+		Programming <span class="text-white">Languages</span>
+	</h2>
+	<SkillCard
+		skills={[
+			"Zig",
+			"C",
+			"Golang",
+			"Javascript",
+			"Typescript",
+			"PHP",
+			"Lua",
+			"Rust",
+			"Bash",
+			"Python",
+		]}
+	/>
+	<h2 class="text-2xl text-dblue">
+		Javascript <span class="text-white">Frameworks/More</span>
+	</h2>
+	<SkillCard
+		skills={[
+			"React",
+			"Svelte",
+			"Astro",
+			"Vue",
+			"Solid",
+			"NextJS",
+			"NuxtJS",
+			"Svelte.kit",
+			"Solid-Start",
+			"Tailwind",
+			"DaisyUI",
+			"DiasyUI",
+			"Express",
+			"Bootstrap",
+			"SASS",
+			"Discord.js",
+			"CSS",
+			"Node",
+			"Firebase"
+		]}
+	/>
+	<div class="w-40 my-8 h-[.1rem] bg-white opacity-20"></div>
+	<h2 class="text-dblue text-2xl">My <span class="text-white">Setup</span></h2>
+	<ul class="list-disc text-base flex flex-col gap-3 my-4 ml-3">
+		<li>
+			<p>Operating System: <span class="text-white">Arch Linux</span></p>
+		</li>
+		<li>
+			<p>Window Manager: <span class="text-white">Hyprland</span></p>
+		</li>
+		<li>
+			<p>
+				Terminal: <span class="text-white">foot</span>
+			</p>
+		</li>
+		<li>
+			<p>Text Editor: <span class="text-white">Neovim</span></p>
+		</li>
+	</ul>
+</Layout>

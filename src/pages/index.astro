@@ -43,13 +43,44 @@ import ProjectCard from "../components/ProjectCard.astro";
 		</a>
 	</div>
 	<p class="my-3">
-		You can find all of them <a class="text-white underline" href="/stuff"
-			>here.</a
-		>
+		You can find all of them <a href="/stuff">here.</a>
 	</p>
-	<div class="flex mt-7 gap-5">
-		<ProjectCard link="https://github.com/Hamza12700/olxify" title="Olxify" desc="(WIP) Ecommerce website with GO + HTMX + Templ" tags={["golang", "htmx", "templ"]} />
-		<ProjectCard link="My Personalized Development Environment (PDE) with Neovim" title="Neovim" desc="My Personalized Development Environment (PDE) with Neovim" tags={["neovim", "lua"]}/>
-		<ProjectCard link="https://github.com/Hamza12700/DotFiles" title="Dotfiles" desc="My Hyprland dotfiles" tags={["linux", "arch"]} />
+	<div class="flex items-start mt-7 gap-5">
+		<ProjectCard
+			link="https://github.com/Hamza12700/olxify"
+			title="Olxify"
+			desc="(WIP) Ecommerce website with GO + HTMX + Templ"
+			tags={["golang", "htmx", "templ"]}
+		/>
+		<ProjectCard
+			link="My Personalized Development Environment (PDE) with Neovim"
+			title="Neovim"
+			desc="My Personalized Development Environment (PDE) with Neovim"
+			tags={["neovim", "lua"]}
+		/>
+		<ProjectCard
+			link="https://github.com/Hamza12700/DotFiles"
+			title="Dotfiles"
+			desc="My dotfiles for Linux and Hyprland"
+			tags={["linux", "arch"]}
+		/>
 	</div>
+	<div class="w-40 my-8 h-[.1rem] bg-white opacity-20"></div>
+	<p class="mb-3">
+		You can find me on <a href="https://twitter.com/Hamza_Rash1d">twitter</a>, <a
+			href="https://www.reddit.com/user/Hamza12700/">reddit</a
+		> and <a href="https://github.com/hamza12700">github</a>
+		. You can also contact me via my email address <a
+			href="mailto:c44help@gmail.com"
+		>
+			c44help@gmail.com</a
+		>.
+	</p>
 </Layout>
+
+<style>
+	a {
+		color: white;
+		text-decoration: underline;
+	}
+</style>
